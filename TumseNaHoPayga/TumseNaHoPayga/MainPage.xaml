@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TumseNaHoPayga"
+             x:Class="TumseNaHoPayga.MainPage">
+
+    <Grid 
+           Padding="20,20,20,20"
+           BackgroundColor="Transparent" 
+           RowSpacing="8" 
+           ColumnSpacing="20">
+       
+        
+        <Label Text="Kya Tumse Ho Payega?" HorizontalOptions="Center" Grid.Row="0" Grid.ColumnSpan="2" FontSize="Medium" FontAttributes="Bold" />
+
+        <Label Text="Mayaat mein kitne din baki hai?" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+        <Picker x:Name="_tarik" Title="Tarik" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" SelectedIndexChanged="Tarik" >
+            <Picker.Items>
+                <x:String>1</x:String>
+                <x:String>2</x:String>
+                <x:String>3</x:String>
+                <x:String>4</x:String>
+                <x:String>5</x:String>
+                <x:String>6</x:String>
+                <x:String>7</x:String>
+                <x:String>8</x:String>
+                <x:String>9</x:String>
+                <x:String>10</x:String>
+                <x:String></x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="rox kitna ukad sakta hai?" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+        <Picker x:Name="_ghantas"  Title="Ghanta" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" SelectedIndexChanged="ghanta">
+            <Picker.Items>
+                <x:String>3</x:String>
+                <x:String>4</x:String>
+                <x:String>5</x:String>
+                <x:String>6</x:String>
+                <x:String>7</x:String>
+                <x:String>8</x:String>
+                <x:String>9</x:String>
+                <x:String>10</x:String>
+                <x:String>11</x:String>
+                <x:String>12</x:String>
+                <x:String>13</x:String>
+                <x:String>14</x:String>
+                <x:String>15</x:String>
+                <x:String></x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="kitne topic hai, babua?" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+        <Picker x:Name="_topic" Title="Mayaat ki Samagri" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" SelectedIndexChanged="topic">
+            <Picker.Items>
+                <x:String>10</x:String>
+                <x:String>11</x:String>
+                <x:String>12</x:String>
+                <x:String>13</x:String>
+                <x:String>14</x:String>
+                <x:String>15</x:String>
+                <x:String>16</x:String>
+                <x:String>17</x:String>
+                <x:String>18</x:String>
+                <x:String>19</x:String>
+                <x:String>20</x:String>
+                <x:String></x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="apni preparation ki halat bata?" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" />
+        <Picker x:Name="_prep" Title="Ghanta kuch aata hai" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" SelectedIndexChanged="prep">
+            <Picker.Items>
+
+                <x:String>BHAGWAN Bharose</x:String>
+                <x:String>DOST Bharose</x:String>
+                <x:String>CHITS Bharose</x:String>
+                <x:String>LAL PATTI Bharose</x:String>
+                <x:String>DIMAAG HAI</x:String>
+                <x:String></x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="subject ka boj bata?" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" />
+        <Picker x:Name="_subject" Title="Boj hi Boj hai" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" SelectedIndexChanged="boj" >
+            <Picker.Items>
+
+                <x:String>Kaun si bhasa hai</x:String>
+                <x:String>Kuch toh padha hai</x:String>
+                <x:String>Sab Kuch aata hai</x:String>
+                <x:String>Dost padha dega</x:String>
+                <x:String>Mini Xerox Tyaar hai!!</x:String>
+                <x:String></x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button x:Name="_submit" Text="Kya udakh sakta hoon mein?" Grid.Row="6" Grid.Column="0"  Clicked="Submit" />
+        <Button x:Name="_reset" Text="Kal se pakka padhuga!!!" Grid.Row="6" Grid.Column="1" Clicked="Reset" />
+
+        <Label x:Name="lbl_topic" Text="" Grid.Row="7" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Small" />
+        <Label x:Name="lbl_hours" Text="" Grid.Row="7" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Small" />
+        <Label x:Name="lbl_msg" Text="" Grid.Row="8" Grid.ColumnSpan="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  FontSize="Medium" FontAttributes="Bold"/>
+    
+
+    </Grid>
+
+</ContentPage>
